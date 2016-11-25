@@ -13,14 +13,18 @@ import com.springsource.samples.customer.internal.CustomerNumberTypeAdapter;
 /**
  * Value object for {@link Customer} numbers.
  * 
- * @author Oliver Gierke
+ * @author Sriram Puvvada
  */
 @Data
 @XmlType
 @XmlJavaTypeAdapter(CustomerNumberTypeAdapter.class)
 public class CustomerNumber {
+	
+	public CustomerNumber (String number){
+		this.number = number;
+	}
 
-    private final String number;
+    private String number;
 
 
     @Override
@@ -39,4 +43,16 @@ public class CustomerNumber {
 
         return new CustomerNumber(UUID.randomUUID().toString());
     }
+
+
+	public String getNumber() {
+		return number;
+	}
+
+
+	public void setNumber(String number) {
+		this.number = number;
+	}
+    
+    
 }

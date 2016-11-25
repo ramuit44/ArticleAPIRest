@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 
 /**
- * @author Oliver Gierke
+ * @author Sriram Puvvada
  */
 @ResponseStatus(HttpStatus.BAD_REQUEST)
 public class InvalidContentException extends RuntimeException {

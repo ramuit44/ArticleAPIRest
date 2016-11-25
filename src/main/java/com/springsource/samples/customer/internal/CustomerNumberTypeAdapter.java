@@ -6,7 +6,7 @@ import com.springsource.samples.customer.CustomerNumber;
 
 
 /**
- * @author Oliver Gierke
+ * @author Sriram Puvvada
  */
 public class CustomerNumberTypeAdapter extends
         XmlAdapter<String, CustomerNumber> {

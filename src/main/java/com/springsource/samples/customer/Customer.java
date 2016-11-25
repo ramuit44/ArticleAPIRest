@@ -8,7 +8,7 @@ import lombok.Data;
 /**
  * Domain class for customers.
  * 
- * @author Oliver Gierke - gierke@synyx.de
+ * @author Sriram Puvvada
  */
 @Data
 @XmlRootElement
@@ -16,8 +16,38 @@ public class Customer {
 
     private CustomerNumber number;
 
-    private String firstname;
-    private String lastname;
+    public CustomerNumber getNumber() {
+		return number;
+	}
+
+
+	public void setNumber(CustomerNumber number) {
+		this.number = number;
+	}
+
+
+	private String firstname;
+    public String getFirstname() {
+		return firstname;
+	}
+
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+
+	public String getLastname() {
+		return lastname;
+	}
+
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+
+
+	private String lastname;
 
 
     protected Customer() {

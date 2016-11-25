@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 /**
  * Dedicated controller for machine access.
  * 
- * @author Oliver Gierke
+ * @author Sriram Puvvada
  */
 @Controller
 @RequestMapping("/rest/customers")

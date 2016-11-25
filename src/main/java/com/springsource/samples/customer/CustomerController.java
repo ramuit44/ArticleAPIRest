@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 /**
- * @author Oliver Gierke
+ * @author Sriram Puvvada
  */
 @Controller
 @RequestMapping("/customers")

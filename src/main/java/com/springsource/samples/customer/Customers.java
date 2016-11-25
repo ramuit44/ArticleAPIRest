@@ -13,7 +13,7 @@ import org.springframework.util.Assert;
 /**
  * Simple wrapper DTO for {@link Customer} collections.
  * 
- * @author Oliver Gierke
+ * @author Sriram Puvvada
  */
 @Data
 @XmlRootElement

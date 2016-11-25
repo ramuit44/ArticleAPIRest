@@ -9,7 +9,7 @@ import org.springframework.util.Assert;
 
 
 /**
- * @author Oliver Gierke
+ * @author Sriram Puvvada
  */
 @Repository
 class CustomerInMemoryRepository implements CustomerRepository {

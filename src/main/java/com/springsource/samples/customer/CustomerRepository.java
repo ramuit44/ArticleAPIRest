@@ -4,7 +4,7 @@ import java.util.List;
 
 
 /**
- * @author Oliver Gierke
+ * @author Sriram Puvvada
  */
 public interface CustomerRepository {
 
