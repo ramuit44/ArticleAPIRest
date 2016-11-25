@@ -1,15 +1,15 @@
-package com.springsource.samples.customer.internal;
+package com.blue.api.rest.internal;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
-import com.springsource.samples.customer.CustomerNumber;
+import com.blue.api.rest.model.ArticleIdentifier;
 
 
 /**
  * @author Sriram Puvvada
  */
-public class CustomerNumberTypeAdapter extends
-        XmlAdapter<String, CustomerNumber> {
+public class ArticleIdentifierTypeAdapter extends
+        XmlAdapter<String, ArticleIdentifier> {
 
     /*
      * (non-Javadoc)
@@ -18,7 +18,7 @@ public class CustomerNumberTypeAdapter extends
      * javax.xml.bind.annotation.adapters.XmlAdapter#marshal(java.lang.Object)
      */
     @Override
-    public String marshal(CustomerNumber v) throws Exception {
+    public String marshal(ArticleIdentifier v) throws Exception {
 
         return v.getNumber();
     }
@@ -31,8 +31,8 @@ public class CustomerNumberTypeAdapter extends
      * javax.xml.bind.annotation.adapters.XmlAdapter#unmarshal(java.lang.Object)
      */
     @Override
-    public CustomerNumber unmarshal(String v) throws Exception {
+    public ArticleIdentifier unmarshal(String v) throws Exception {
 
-        return new CustomerNumber(v);
+        return new ArticleIdentifier(v);
     }
 }

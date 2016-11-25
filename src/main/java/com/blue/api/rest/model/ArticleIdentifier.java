@@ -1,4 +1,4 @@
-package com.springsource.samples.customer;
+package com.blue.api.rest.model;
 
 import java.util.UUID;
 
@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import lombok.Data;
 
-import com.springsource.samples.customer.internal.CustomerNumberTypeAdapter;
+import com.blue.api.rest.internal.ArticleIdentifierTypeAdapter;
 
 
 /**
@@ -17,10 +17,10 @@ import com.springsource.samples.customer.internal.CustomerNumberTypeAdapter;
  */
 @Data
 @XmlType
-@XmlJavaTypeAdapter(CustomerNumberTypeAdapter.class)
-public class CustomerNumber {
+@XmlJavaTypeAdapter(ArticleIdentifierTypeAdapter.class)
+public class ArticleIdentifier {
 	
-	public CustomerNumber (String number){
+	public ArticleIdentifier (String number){
 		this.number = number;
 	}
 
@@ -35,13 +35,13 @@ public class CustomerNumber {
 
 
     /**
-     * Creates a new random {@link CustomerNumber}.
+     * Creates a new random {@link ArticleIdentifier}.
      * 
      * @return
      */
-    public static CustomerNumber next() {
+    public static ArticleIdentifier next() {
 
-        return new CustomerNumber(UUID.randomUUID().toString());
+        return new ArticleIdentifier(UUID.randomUUID().toString());
     }
 
 

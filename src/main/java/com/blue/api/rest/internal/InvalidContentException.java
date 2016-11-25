@@ -1,4 +1,4 @@
-package com.springsource.samples.customer.internal;
+package com.blue.api.rest.internal;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
