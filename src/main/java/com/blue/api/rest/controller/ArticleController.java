@@ -27,8 +27,14 @@ class ArticleController {
 		Assert.notNull(repository);
 		this.repository = repository;
 	}
-
-		@RequestMapping(value = "/articles", method = RequestMethod.GET, headers = "Accept=application/json")
+	
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	   public String index() {
+		   return "index.html";
+	}
+	
+	
+	@RequestMapping(value = "/articles", method = RequestMethod.GET, headers = "Accept=application/json")
 	public List<Article> getArticles() {
 		List<Article> articles = repository.getAllArticles();
 		return articles;

@@ -1,11 +1,11 @@
-<a ui-sref="newMovie" class="btn-primary btn-lg nodecoration">Add New Movie</a>
+<a ui-sref="newArticle" class="btn-primary btn-lg nodecoration">Add New Article</a>
 <table class="table movietable">
     <tr>
-        <td><h3>All Movies</h3></td>
+        <td><h3>All Articles</h3></td>
         <td></td>
     </tr>
-    <tr ng-repeat="movie in movies">
-        <td>{{movie.title}}</td>
+    <tr ng-repeat="article in articles">
+        <td>{{article.title}}</td>
         <td>
             <a class="btn btn-primary" ui-sref="viewMovie({id:movie._id})">View</a>
             <a class="btn btn-danger"  ng-click="deleteMovie(movie)">Delete</a>
